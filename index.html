@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ca">
+  <head>
+    <meta charset="utf-8">
+    <title>Generador Mörk Borg en català</title>
+  </head>
+  <body>
+    <script src="./recursos/js/jquery-3.5.1.min.js"></script>
+    <script src="./recursos/js/generator.js"></script>
+    <script src="./recursos/js/dades_general.js"></script>
+    <script src="./recursos/js/pdf-lib.js"></script>
+    <script src="./recursos/js/generador_pdf.js"></script>
+    <header>
+      <h1><span id="nom"></span></h1>
+    </header>
+    <main>
+      <div>PLATA: <span id="plata"></span></div>
+      <div>Un odre d'aigua i menjar per a <span id="menjar"></span>.</div>
+      <span id="inventari_1"></span><br />
+      <span id="inventari_2"></span><br />
+      <span id="inventari_3"></span><br />
+      <span id="arma"></span><br />
+      <span id="armadura"></span>
+      <div>AGILITAT: <span id=agilitat></span></div>
+      <div>PRESÈNCIA: <span id=presencia></span></div>
+      <div>FORÇA: <span id=força></span></div>
+      <div>RESISTÈNCIA: <span id=resistencia></span></div>
+      <div>Pots carregar <span id=carrega></span> articles de mida normal sense esforç. A partir d'aquí la dificultat a proves de Força i Agilitat augmenta +2. És impossible que carreguis més de <span id="carrega_max"></span> articles.
+      <div>Tens <span id="pc"></span> punts de cop.</div>
+      <div>PRESAGIS » <span id="presagis"></span></div>
+      <button onclick="descarregarPDF('color')">Descarregar en PDF Color</button><button onclick="descarregarPDF('bn')">Descarregar en PDF BN</button>
+    </main>
+    <footer>
+      <img id="MBLogo" src="./recursos/imatges/CompWith_MORKBORG_horiz.svg" style="height: 2em;">
+    </footer>
+  </body>
+    <script src="./recursos/js/principal.js"></script>
+</html>
