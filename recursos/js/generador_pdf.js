@@ -17,7 +17,7 @@ window.descarregarPDF = async function (color) {
             document.getElementById("nom").textContent
         );
         form.getTextField("Descripcio").setText(
-
+            document.getElementById("descripcio").textContent
         );
         form.getTextField("Classe").setText(
 
@@ -67,7 +67,7 @@ window.descarregarPDF = async function (color) {
 
         let equipament = ""
         if (document.getElementById("inventari_1").textContent != "res") { equipament += document.getElementById("inventari_1").textContent + "\r\r";};
-        equipament += document.getElementById("inventari_2").textContent + "\r" + document.getElementById("inventari_3").textContent;
+        equipament += document.getElementById("inventari_2").textContent + "\r\r" + document.getElementById("inventari_3").textContent;
 
         form.getTextField("Equipament_1").setText(
             equipament

@@ -2,7 +2,7 @@
 <html lang="ca">
   <head>
     <meta charset="utf-8">
-    <title>Generador Mörk Borg en català</title>
+    <title>Bordissallador</title>
   </head>
   <body>
     <script src="./recursos/js/jquery-3.5.1.min.js"></script>
@@ -11,27 +11,60 @@
     <script src="./recursos/js/pdf-lib.js"></script>
     <script src="./recursos/js/generador_pdf.js"></script>
     <header>
-      <h1><span id="nom"></span></h1>
+      <h1>Bordissallador</h1>
+      <div>Un generador de personatges en català</div>
+      <img id="MBLogo" src="./recursos/imatges/CompWith_MORKBORG_horiz.svg" style="height: 3em;">
+      <div><a href="javascript:window.scrollTo(0,0); window.location.reload(true)">Prem per matar-lo.</a></div>
     </header>
     <main>
-      <div>PLATA: <span id="plata"></span></div>
-      <div>Un odre d'aigua i menjar per a <span id="menjar"></span>.</div>
-      <span id="inventari_1"></span><br />
-      <span id="inventari_2"></span><br />
-      <span id="inventari_3"></span><br />
-      <span id="arma"></span><br />
-      <span id="armadura"></span>
-      <div>AGILITAT: <span id=agilitat></span></div>
-      <div>PRESÈNCIA: <span id=presencia></span></div>
-      <div>FORÇA: <span id=força></span></div>
-      <div>RESISTÈNCIA: <span id=resistencia></span></div>
-      <div>Pots carregar <span id=carrega></span> articles de mida normal sense esforç. A partir d'aquí la dificultat a proves de Força i Agilitat augmenta +2. És impossible que carreguis més de <span id="carrega_max"></span> articles.
-      <div>Tens <span id="pc"></span> punts de cop.</div>
-      <div>PRESAGIS » <span id="presagis"></span></div>
-      <button onclick="descarregarPDF('color')">Descarregar en PDF Color</button><button onclick="descarregarPDF('bn')">Descarregar en PDF BN</button>
+      <div>
+        <div><strong>Nom</strong> <span id="nom"></span></div>
+        <div><strong>Classe</strong> <span id="classe"></span></div>
+        <div><strong>PC</strong> <span id="pc"></span>/<span id="pc_total"></span></div>
+        <div><strong>Presagis</strong> <span id="presagis"></span> (<span id="dau_presagis"></span>)</div>
+      <div>
+      <div>
+        <div>
+          <h2>Et diuen <span id="nom2"></span></h2>
+          <span id="descripcio"></span>
+        </div>
+        <div style="display:none;">
+          <h2>Coses de classe</h2>
+          Aqui aniràn les coses de classe.
+        </div>
+        <div>
+          <h2>Habilitats</h2>
+          <div><strong>Agilitat:</strong> <span id=agilitat></span></div>
+          <div><strong>Presència:</strong> <span id=presencia></span></div>
+          <div><strong>Força:</strong> <span id=força></span></div>
+          <div><strong>Resistència:</strong> <span id=resistencia></span></div>
+
+        </div>
+          <h2>Habilitats</h2>
+          <div class="llista">
+            <div class="element-llista">Un odre d'aigua i menjar per a <span id="menjar"></span>.</div>
+            <div class="element-llista"><span id="arma"></span></div>
+            <div class="element-llista"><span id="armadura"></span></div>
+            <div class="element-llista"><span id="inventari_1"></span></div>
+            <div class="element-llista"><span id="inventari_2"></span></div>
+            <div class="element-llista"><span id="inventari_3"></span><div>
+            <div class="element-llista"><div><span id="plata"></span> monedes.</div>
+          </div>
+          <div>Pots carregar fins a <strong><span id=carrega></span> articles de mida normal</strong> sense esforç. A partir d'aquí, la dificultat de les proves de Força i d'Agilitat augmenta en +2.
+          <br />
+          És impossible que carreguis més de <span id="carrega_max"></span> articles.
+      </div>
+      <button onclick="descarregarPDF('color')">Descarregar PDF <br /><em>a color</em></button>
+      <button onclick="descarregarPDF('bn')">Descarregar PDF <br /><em>en blanc i negre</em></button>
     </main>
     <footer>
-      <img id="MBLogo" src="./recursos/imatges/CompWith_MORKBORG_horiz.svg" style="height: 2em;">
+      <div>
+        El <strong>«Bordissallador»</strong> és una producció independent d'en Litus i no té afiliació amb Ockult Örtmästare Games o Stockholm Kartell. Està publicada sota la llicència «MÖRK BORG Third Party License».
+      </div>
+      <div>
+        MÖRK BORG is copyright Ockult Örtmästare Games and Stockholm Kartell.
+      </div>
+
     </footer>
   </body>
     <script src="./recursos/js/principal.js"></script>
