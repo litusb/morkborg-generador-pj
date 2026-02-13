@@ -26,12 +26,13 @@ let dau_presagis = "d2";
 let nom = generate_text("nom");
 $("#nom").html(nom);
 $("#nom2").html(nom);
+
 $("#plata").html((rollD(6)+rollD(6))*10);
     let menjar = rollD(4);
 $("#menjar").html(menjar + " " + ((menjar > 1) ? "dies" : "dia"));
 
 let inventari_1 = generate_text("inventari_1");
-(inventari_1 != '')?$("#inventari_1").html(inventari_1):$("#inventari_1").html("");
+(inventari_1 != '')?$("#inventari_1").html(inventari_1) : $("#contenidor_inventari_1").css('display', 'none');
 
 let inventari_2 = generate_text("inventari_2");
 $("#inventari_2").html(inventari_2);
@@ -71,3 +72,6 @@ $("#descripcio").html(generate_text("descripcio"));
 
 let classe = generate_text("classe");
 $("#classe").html(classe);
+$("#classe2").html(classe);
+
+$("#versio").html("V.260214.03 - «\"TIU\", AQUEST CONTESTADOR EM CONTESTA»");

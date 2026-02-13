@@ -2,6 +2,10 @@
 <html lang="ca">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Manufacturing+Consent|Fira+Code">
+    <link rel="stylesheet" href="recursos/css/estils.css">
     <title>Bordissallador</title>
   </head>
   <body>
@@ -12,57 +16,62 @@
     <script src="./recursos/js/generador_pdf.js"></script>
     <header>
       <h1>Bordissallador</h1>
-      <div>Un generador de personatges en català</div>
-      <img id="MBLogo" src="./recursos/imatges/CompWith_MORKBORG_horiz.svg" style="height: 3em;">
-      <div><a href="javascript:window.scrollTo(0,0); window.location.reload(true)">Prem per matar-lo.</a></div>
+      <div class="subtitol">Un generador de personatges en català</div>
+      <img id="MBLogo" src="./recursos/imatges/CompWith_MORKBORG_horiz.svg">
+      <div id="boto-matar" class="accent boto"><a href="javascript:window.scrollTo(0,0); window.location.reload(true)" class="accent">Prem per matar-lo.</a></div>
     </header>
     <main>
-      <div>
+      <div class="superior">
         <div><strong>Nom</strong> <span id="nom"></span></div>
         <div><strong>Classe</strong> <span id="classe"></span></div>
         <div><strong>PC</strong> <span id="pc"></span>/<span id="pc_total"></span></div>
         <div><strong>Presagis</strong> <span id="presagis"></span> (<span id="dau_presagis"></span>)</div>
-      <div>
-      <div>
-        <div>
+      </div>
+      <div class="inferior">
+        <div class="dins-inferior supesq">
           <h2>Et diuen <span id="nom2"></span></h2>
           <span id="descripcio"></span>
         </div>
-        <div style="display:none;">
-          <h2>Coses de classe</h2>
-          Aqui aniràn les coses de classe.
+        <div class="dins-inferior supdret">
+          <h2 id="classe2"></h2>
+          Aqui hi aniràn les coses de classe.
         </div>
-        <div>
+        <div class="dins-inferior infesq">
           <h2>Habilitats</h2>
           <div><strong>Agilitat:</strong> <span id=agilitat></span></div>
           <div><strong>Presència:</strong> <span id=presencia></span></div>
           <div><strong>Força:</strong> <span id=força></span></div>
           <div><strong>Resistència:</strong> <span id=resistencia></span></div>
-
         </div>
-          <h2>Habilitats</h2>
+        <div class="dins-inferior infdret">
+          <h2>Equipament</h2>
           <div class="llista">
             <div class="element-llista">Un odre d'aigua i menjar per a <span id="menjar"></span>.</div>
             <div class="element-llista"><span id="arma"></span></div>
             <div class="element-llista"><span id="armadura"></span></div>
-            <div class="element-llista"><span id="inventari_1"></span></div>
+            <div class="element-llista" id="contenidor_inventari_1"><span id="inventari_1"></span></div>
             <div class="element-llista"><span id="inventari_2"></span></div>
-            <div class="element-llista"><span id="inventari_3"></span><div>
-            <div class="element-llista"><div><span id="plata"></span> monedes.</div>
+            <div class="element-llista"><span id="inventari_3"></span></div>
+            <div class="element-llista"><strong><span id="plata"></span></strong> monedes.</div>
           </div>
-          <div>Pots carregar fins a <strong><span id=carrega></span> articles de mida normal</strong> sense esforç. A partir d'aquí, la dificultat de les proves de Força i d'Agilitat augmenta en +2.
-          <br />
-          És impossible que carreguis més de <span id="carrega_max"></span> articles.
+          <div>
+            Pots carregar fins a <strong><span id=carrega></span> articles de mida normal</strong> sense esforç. A partir d'aquí, la dificultat de les proves de Força i d'Agilitat augmenta en +2.
+            <br />
+            És impossible que carreguis més de <span id="carrega_max"></span> articles.
+          </div>
+        </div>
       </div>
-      <button onclick="descarregarPDF('color')">Descarregar PDF <br /><em>a color</em></button>
-      <button onclick="descarregarPDF('bn')">Descarregar PDF <br /><em>en blanc i negre</em></button>
     </main>
     <footer>
+      <button onclick="descarregarPDF('color')">Descarregar PDF <br /><em>a color</em></button>
+      <button onclick="descarregarPDF('bn')">Descarregar PDF <br /><em>en blanc i negre</em></button>
       <div>
+        <p>
         El <strong>«Bordissallador»</strong> és una producció independent d'en Litus i no té afiliació amb Ockult Örtmästare Games o Stockholm Kartell. Està publicada sota la llicència «MÖRK BORG Third Party License».
-      </div>
-      <div>
+        </p><p>
         MÖRK BORG is copyright Ockult Örtmästare Games and Stockholm Kartell.
+        </p>
+        <em><p id="versio"></p><em>
       </div>
 
     </footer>

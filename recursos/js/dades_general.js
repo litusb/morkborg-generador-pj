@@ -106,30 +106,30 @@
 
   gen_data['arma'] = [
      '{arma_pergami}'
-    , 'arc (d6, amb <span id="fletxes"></span> fletxes)'
-    , 'maça amb cadenes'
-    , 'ballesta (d8, amb <span id="virots"></span> virots)'
-    , 'Zweihänder (d10)'
+    , '<strong>arc</strong> (d6, amb <span id="fletxes"></span> fletxes)'
+    , '<strong>maça amb cadenes</strong> (d8)'
+    , '<strong>ballesta</strong> (d8, amb <span id="virots"></span> virots)'
+    , '<strong>Zweihänder</strong> (d10)'
   ];
 
   gen_data['arma_pergami'] = [
-      'fèmur (d4)'
-    , 'bastó (d4)'
-    , 'espasa curta (d4)'
-    , 'ganivet (d4)'
-    , 'martell de guerra (d6)'
-    , 'espasa (d6)'
+      '<strong>fèmur</strong> (d4)'
+    , '<strong>bastó</strong> (d4)'
+    , '<strong>espasa curta</strong> (d4)'
+    , '<strong>ganivet</strong> (d4)'
+    , '<strong>martell de guerra</strong> (d6)'
+    , '<strong>espasa</strong> (d6)'
   ];
 
   gen_data['armadura'] = [
       '{armadura_pergami}'
-    , 'armadura mitjana (mal -d4, nivell 2) Dif+2 a proves d\'agilitat incl. defensa'
-    , 'armadura pesada (mal -d6, nivell 3) Dif+4 a proves d\'agilitat, Dif+2 defensa'
+    , '<strong>armadura mitjana</strong> (mal -d4, nivell 2) Dif+2 a proves d\'agilitat incl. defensa'
+    , '<strong>armadura pesada</strong> (mal -d6, nivell 3) Dif+4 a proves d\'agilitat, Dif+2 defensa'
   ];
 
   gen_data['armadura_pergami'] = [
       'sense armadura (nivell 0)'
-    , 'armadura lleugera (mal -d2, nivell 1)'
+    , '<strong>armadura lleugera</strong> (mal -d2, nivell 1)'
   ];
 
   gen_data['pergami_impur'] = [
@@ -159,13 +159,13 @@
   ];
 
   gen_data['classe'] = [
-      'ànima perduda'
-    // , 'desertor ullalut'
-    // , 'escòria nascuda al clavegueram'
-    // , 'ermità esotèric'
-    // , 'reialesa en desgràcia'
-    // , 'sacerdot heretge'
-    // , 'herborista ocultista'
+      'Ànima perduda'
+    // , 'Desertor ullalut'
+    // , 'Escòria nascuda al clavegueram'
+    // , 'Ermità esotèric'
+    // , 'Reialesa en desgràcia'
+    // , 'Sacerdot heretge'
+    // , 'Herborista ocultista'
   ];
 
   gen_data['descripcio'] = [
